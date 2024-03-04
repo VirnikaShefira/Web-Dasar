@@ -14,6 +14,7 @@ header {
     height: 100vh;
     display: flex;
     flex-direction: column;
+    /* overflow: hidden; */
 }
 
 nav {
@@ -169,12 +170,75 @@ footer {
 
 /* Perangkat dengan lebar layar 768px dan di bawahnya */
 @media screen and (max-width: 768px) {
+    /* header */
+
     header {
         display: flex;
+        padding: 20px;
     }
-  nav {
+
+    nav {
     justify-content: center;
     flex-direction: column;
     height: 100px;
-  }
+    width: 100%;
+    margin: 0;
+    }
+
+    .logo {
+        margin: 0;
+    }
+
+    .menu {
+        margin: 0;
+    }
+
+    .menu ul{
+        padding: 0;
+    }
+
+    .menu ul li{
+        padding: 0;
+    }
+
+    .menu ul li a {
+        text-decoration: none;
+        /* padding-left: 30px; */
+        /* padding: 0; */
+        font-size: 14px;
+        color: #EEE7DA;
+        padding: 15px;
+    }
+
+    /* end header */
+
+    /* main */
+
+    .about-content {
+        text-align: justify;
+        margin: 0;
+        padding: 20px;
+
+    }
+
+    .about-content h2{
+        text-align: center;
+    }
+    
+    .card{
+        margin: 20px 0;
+    }
+
+    .box{
+        flex-direction: column;
+    }
+
+    .box img{
+        width: 100%;
+    }
+
+    aside{
+        /* display: none; */
+    }
+
 }
